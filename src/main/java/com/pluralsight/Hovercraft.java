@@ -6,6 +6,10 @@ public class Hovercraft extends Vehicle {
     private String skirtColor;
     private boolean waterCapable;
 
+    public Hovercraft(String color, int numberOfPassengers, int cargoCapacity, int fuelCapacity) {
+        super(color, numberOfPassengers, cargoCapacity, fuelCapacity);
+    }
+
     public int getNumberOfJets() {
         return numberOfJets;
     }
