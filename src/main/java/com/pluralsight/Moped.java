@@ -6,6 +6,10 @@ public class Moped extends Vehicle{
     private String helmetColor;
     private boolean kickstandIncluded;
 
+    public Moped(String color, int numberOfPassengers, int cargoCapacity, int fuelCapacity) {
+        super(color, numberOfPassengers, cargoCapacity, fuelCapacity);
+    }
+
     public boolean isBasketIncluded() {
         return basketIncluded;
     }
