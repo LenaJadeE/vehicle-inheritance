@@ -38,5 +38,26 @@ public class Main {
         hovercraft.setNumberOfJets(2);
         hovercraft.setSkirtColor("Silver");
         hovercraft.setWaterCapable(true);
+
+        System.out.println("Moped: " + slowRide.getColor() + ", passengers " + slowRide.getNumberOfPassengers()
+                + ", cargo " + slowRide.getCargoCapacity() + ", fuel " + slowRide.getFuelCapacity()
+                + ", basketIncluded " + slowRide.isBasketIncluded()
+                + ", helmetColor " + slowRide.getHelmetColor()
+                + ", kickstandIncluded " + slowRide.isKickstandIncluded());
+        System.out.println("Car: " + car.getColor() + ", passengers " + car.getNumberOfPassengers()
+                + ", cargo " + car.getCargoCapacity() + ", fuel " + car.getFuelCapacity()
+                + ", numberOfDoors " + car.getNumberOfDoors()
+                + ", sunroofIncluded " + car.isSunroofIncluded()
+                + ", trunkSizeCubicFeet " + car.getTrunkSizeCubicFeet());
+        System.out.println("Semi truck: " + semiTruck.getColor() + ", passengers " + semiTruck.getNumberOfPassengers()
+                + ", cargo " + semiTruck.getCargoCapacity() + ", fuel " + semiTruck.getFuelCapacity()
+                + ", trailerLengthFeet " + semiTruck.getTrailerLengthFeet()
+                + ", sleeperCabIncluded " + semiTruck.isSleeperCabIncluded()
+                + ", numberOfAxles " + semiTruck.getNumberOfAxles());
+        System.out.println("Hovercraft: " + hovercraft.getColor() + ", passengers " + hovercraft.getNumberOfPassengers()
+                + ", cargo " + hovercraft.getCargoCapacity() + ", fuel " + hovercraft.getFuelCapacity()
+                + ", numberOfJets " + hovercraft.getNumberOfJets()
+                + ", skirtColor " + hovercraft.getSkirtColor()
+                + ", waterCapable " + hovercraft.isWaterCapable());
     }
 }
