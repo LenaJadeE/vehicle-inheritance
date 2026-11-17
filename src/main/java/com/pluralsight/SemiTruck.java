@@ -1,6 +1,6 @@
 package com.pluralsight;
 
-public class Semitruck {
+public class SemiTruck extends Vehicle {
 
     private int trailerLengthFeet;
     private boolean sleeperCabIncluded;
