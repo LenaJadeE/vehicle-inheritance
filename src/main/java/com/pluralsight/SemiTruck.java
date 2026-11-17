@@ -6,6 +6,10 @@ public class SemiTruck extends Vehicle {
     private boolean sleeperCabIncluded;
     private int numberOfAxles;
 
+    public SemiTruck(String color, int numberOfPassengers, int cargoCapacity, int fuelCapacity) {
+        super(color, numberOfPassengers, cargoCapacity, fuelCapacity);
+    }
+
     public int getTrailerLengthFeet() {
         return trailerLengthFeet;
     }
