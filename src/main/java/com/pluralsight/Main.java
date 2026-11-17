@@ -3,38 +3,22 @@ package com.pluralsight;
 public class Main {
 
     public static void main(String[] args) {
-        Moped slowRide = new Moped();
-        slowRide.setColor("Red");
-        slowRide.setNumberOfPassengers(1);
-        slowRide.setCargoCapacity(0);
-        slowRide.setFuelCapacity(5);
+        Moped slowRide = new Moped("Red", 1, 0, 5);
         slowRide.setBasketIncluded(true);
         slowRide.setHelmetColor("Black");
         slowRide.setKickstandIncluded(true);
 
-        Car car = new Car();
-        car.setColor("Blue");
-        car.setNumberOfPassengers(5);
-        car.setCargoCapacity(400);
-        car.setFuelCapacity(14);
+        Car car = new Car("Blue", 5, 400, 14);
         car.setNumberOfDoors(4);
         car.setSunroofIncluded(true);
         car.setTrunkSizeCubicFeet(16);
 
-        SemiTruck semiTruck = new SemiTruck();
-        semiTruck.setColor("White");
-        semiTruck.setNumberOfPassengers(2);
-        semiTruck.setCargoCapacity(45000);
-        semiTruck.setFuelCapacity(150);
+        SemiTruck semiTruck = new SemiTruck("White", 2, 45000, 150);
         semiTruck.setTrailerLengthFeet(53);
         semiTruck.setSleeperCabIncluded(true);
         semiTruck.setNumberOfAxles(5);
 
-        Hovercraft hovercraft = new Hovercraft();
-        hovercraft.setColor("Gray");
-        hovercraft.setNumberOfPassengers(6);
-        hovercraft.setCargoCapacity(1500);
-        hovercraft.setFuelCapacity(75);
+        Hovercraft hovercraft = new Hovercraft("Gray", 6, 1500, 75);
         hovercraft.setNumberOfJets(2);
         hovercraft.setSkirtColor("Silver");
         hovercraft.setWaterCapable(true);
@@ -59,5 +43,17 @@ public class Main {
                 + ", numberOfJets " + hovercraft.getNumberOfJets()
                 + ", skirtColor " + hovercraft.getSkirtColor()
                 + ", waterCapable " + hovercraft.isWaterCapable());
+
+        slowRide.setColor("Green");
+        car.setNumberOfPassengers(4);
+        semiTruck.setCargoCapacity(48000);
+        hovercraft.setFuelCapacity(80);
+
+        System.out.println();
+        System.out.println("After the setters:");
+        System.out.println("Moped color: " + slowRide.getColor());
+        System.out.println("Car passengers: " + car.getNumberOfPassengers());
+        System.out.println("Semi truck cargo: " + semiTruck.getCargoCapacity());
+        System.out.println("Hovercraft fuel: " + hovercraft.getFuelCapacity());
     }
 }
